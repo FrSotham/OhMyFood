@@ -7,7 +7,7 @@
     flex-direction: column;
     gap: 30px;
     font-family: typography.$text-font-family;
-    margin-top: 40px;
+    margin: 40px 0px;
     &-step {
         display: flex;
         justify-content: flex-start;
@@ -34,6 +34,9 @@
         }
         &__img {
             color: rgba(0, 0, 0, 0.459)
+        }
+        &:last-child {
+            background-color: #9256dc15;
         }
     }
     &-header {
