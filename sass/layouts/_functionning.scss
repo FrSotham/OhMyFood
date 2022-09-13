@@ -1,0 +1,47 @@
+@use "../utils/_variables.scss";
+@use "../utils/_typography.scss";
+@use "../utils/mixins";
+
+.functioning {
+    @include mixins.center-flex;
+    flex-direction: column;
+    gap: 30px;
+    font-family: typography.$text-font-family;
+    margin-top: 40px;
+    &-step {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap:20px;
+        background-color: variables.$color-background-brighter;
+        padding: 25px;
+        box-shadow: 0px 2px 5px -2px variables.$color-shadow;
+        border-radius: 25px;
+        width: 90%;
+        &__text {
+            font-size: 16px;
+            font-weight: 300
+        }
+        &__number {
+            background-color: variables.$color-primary;
+            width: 25px;
+            height: 25px;
+            border-radius: 20px;
+            @include mixins.center-flex;
+            margin-left: -35px;
+            color: white;
+            font-size: 12px;
+        }
+        &__img {
+            color: rgba(0, 0, 0, 0.459)
+        }
+    }
+    &-header {
+        width: 100%;
+        margin-left: 10%;
+        &__title {
+            font-weight: 800;
+        }
+    }
+
+}

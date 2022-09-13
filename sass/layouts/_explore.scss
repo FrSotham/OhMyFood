@@ -1,6 +1,7 @@
 @use "../utils/_variables.scss";
 @use "../utils/_typography.scss";
 @use "../utils/mixins";
+@use "../components/button";
 
 .explore {
     @include mixins.center-flex;
@@ -17,10 +18,6 @@
         font-weight: 200
     }
     &-button {
-        text-decoration: none;
-        color: white;
-        background:linear-gradient(variables.$color-secondary, variables.$color-primary);
-        padding: 20px;
-        border-radius: 50px;
+        @include button.button
     }
 }
