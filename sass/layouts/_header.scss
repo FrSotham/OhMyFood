@@ -1,0 +1,19 @@
+@use "../utils/_variables.scss";
+@use "../utils/_typography.scss";
+@use "../utils/mixins";
+
+
+.header {
+    height: 100%;
+    z-index:1000;
+    position: relative;
+
+h1 {
+    @include mixins.center-flex;
+    font-family: typography.$heading-font-family , sans-serif;
+    text-align: center;
+    height: 75px;
+    box-shadow: 0px 5px 5px -5px rgba(0,0,0,.25);
+}
+}
+

@@ -1,0 +1,21 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "projet 3 OC",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --no-source-map --watch sass/main.scss css/main.css",
+    "prefix": "postcss ./css/main.css --use autoprefixer -d ./css/prefixed/"
+  },
+  "keywords": [],
+  "author": "frsotham",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FrSotham/OhMyFood.git"
+  },
+  "bugs": {
+    "url": "https://github.com/FrSotham/OhMyFood/issues"
+  },
+  "homepage": "https://github.com/FrSotham/OhMyFood#readme"
+}

@@ -1,0 +1,26 @@
+@use "../utils/_variables.scss";
+@use "../utils/_typography.scss";
+@use "../utils/mixins";
+
+.explore {
+    @include mixins.center-flex;
+    flex-direction: column;
+    gap: 30px;
+    font-family: typography.$text-font-family;
+    padding: 30px;
+    background-color: variables.$color-background-brighter;
+    &-title {
+        text-align: center;
+    }
+    &-subtitle {
+        text-align: center;
+        font-weight: 200
+    }
+    &-button {
+        text-decoration: none;
+        color: white;
+        background:linear-gradient(variables.$color-secondary, variables.$color-primary);
+        padding: 20px;
+        border-radius: 50px;
+    }
+}
