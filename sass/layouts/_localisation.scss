@@ -1,6 +1,7 @@
 @use "../utils/_variables.scss";
 @use "../utils/_typography.scss"; 
 @use "../utils/mixins";
+@use "../utils/media-querries";
 
 .localisation {
         @include mixins.center-flex;
@@ -15,5 +16,9 @@
         font-family: typography.$text-font-family; 
         font-weight: 600;
         font-size: typography.$text-font-size
+    }
+    @include media-querries.mobile-only {
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
     }
 }

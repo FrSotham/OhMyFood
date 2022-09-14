@@ -1,4 +1,12 @@
+@use "../utils/media-querries";
+
 * {
     box-sizing: border-box;
     margin: 0px;
+}
+
+body {
+    @include media-querries.mobile-only {
+        margin: 0px 10%;
+    }
 }

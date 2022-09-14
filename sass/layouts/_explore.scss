@@ -2,6 +2,7 @@
 @use "../utils/_typography.scss";
 @use "../utils/mixins";
 @use "../components/button";
+@use "../utils/media-querries";
 
 .explore {
     @include mixins.center-flex;
@@ -20,5 +21,9 @@
     }
     &-button {
         @include button.button
+    }
+    @include media-querries.mobile-only {
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
     }
 }

@@ -1,4 +1,6 @@
 @use "../utils/typography";
+@use "../utils/media-querries";
+@use "../utils/mixins";
 
 
 .footer {
@@ -32,4 +34,12 @@
         display: flex;
         gap: 10px;
     }
+    @include media-querries.mobile-only {
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        @include mixins.center-flex;
+    }
+     
+
+    
 }

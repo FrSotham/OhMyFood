@@ -1,6 +1,7 @@
 @use "../utils/_variables.scss";
 @use "../utils/_typography.scss";
 @use "../utils/mixins";
+@use "../utils/media-querries";
 
 
 .header {
@@ -14,6 +15,9 @@ h1 {
     text-align: center;
     height: 75px;
     box-shadow: 0px 5px 5px -5px variables.$color-shadow;
+    @include media-querries.mobile-only {
+        box-shadow: none;
+    }
 }
 }
 
