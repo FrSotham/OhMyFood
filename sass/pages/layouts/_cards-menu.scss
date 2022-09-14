@@ -1,0 +1,94 @@
+@use  "../utils/variables";
+@use "../utils/mixins";
+@use "../utils/typography";
+@use "../utils/media-querries";
+
+.menu {
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    position: relative;
+    top: -46px;
+    font-family: typography.$text-font-family;
+    width: 100%;
+
+    &-header {
+        @include mixins.center-flex;
+        justify-content: space-around;
+        padding-bottom: 10px;
+
+        &__title {
+            font-family: typography.$heading-font-family;
+            font-size: typography.$heading-font-size;
+            font-weight: 500;
+        }
+
+        &__button {
+            border: none;
+            font-size: 22px;
+        }
+    }
+    
+    
+}
+
+.cards {
+    width: 100%;
+    &__heading {
+        padding: 20px 0px 0px 20px;
+        color: rgba(0, 0, 0, 0.644);
+        border-bottom: 2px solid variables.$color-tertiary;
+    }
+    &-menu {
+        background-color: white;
+        display: flex;
+        gap: 20px;
+        border-radius: 20px;
+        height: 75px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        box-shadow: 0px 2px 10px -1px variables.$color-shadow;
+
+        &__description {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 5px;
+            padding: 10px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+            > :first-child {
+                font-weight: 800;
+            }
+        }
+
+        &__price {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-right: 10px;
+            font-weight: 600;
+        }
+
+        &__check {
+            display: none;
+        }
+
+    }
+    &-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        
+
+
+        @include media-querries.mobile-only {
+        display: grid;
+        grid-template-columns: repeat(3, 32%);
+    }
+    }
+    
+}

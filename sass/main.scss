@@ -1,5 +1,5 @@
-@use "./utils/_variables.scss";
-@use "./layouts/_header.scss";
+@use "./utils/variables";
+@use "./layouts/header";
 @use "./utils/typography";
 @use "./components/button";
 @use "./layouts/container";
@@ -13,3 +13,7 @@
 @use "./components/heart-button";
 @use "./utils/media-querries";
 @use "./layouts/footer";
+
+// @use pages
+
+@use "./menu";

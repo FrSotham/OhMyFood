@@ -1,0 +1,10 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+}
+
+@media (min-width: 1000px) {
+  body {
+    margin: 0px 10%;
+  }
+}/*# sourceMappingURL=reset.css.map */

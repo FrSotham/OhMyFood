@@ -1,0 +1,18 @@
+// @use main sccs
+
+@use "./utils/_variables.scss";
+@use "./layouts/header";
+@use "./utils/typography";
+@use "./components/button";
+@use "./base/reset.scss";
+@use "./utils/mixins";
+@use "./components/heart-button";
+@use "./utils/media-querries";
+@use "./layouts/footer";
+
+// @use menu scss
+
+
+@use "./pages/layouts/photo.scss";
+@use "./pages/layouts/cards-menu";
+
