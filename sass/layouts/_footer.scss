@@ -1,0 +1,35 @@
+@use "../utils/typography";
+
+
+.footer {
+    background-color: #3f3e3e;
+    color: rgba(255, 255, 255, 0.822);
+    padding: 25px;
+    padding-bottom: 30px;
+    font-family: typography.$text-font-family;
+    font-size: 15px;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    cursor: pointer;
+    &-logo {
+        font-family: typography.$heading-font-family;
+        font-weight: 400;
+        font-size: 20px;
+        padding-bottom: 15px;
+        color: white;
+    }
+    & a {
+        text-decoration: none;
+        color: inherit;
+    }
+    &-proposing {
+        display: flex;
+        gap:15px;
+    }
+    &-partner {
+        display: flex;
+        gap: 10px;
+    }
+}

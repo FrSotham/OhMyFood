@@ -1,6 +1,13 @@
+
+
 @mixin heart-button {
         position: absolute;
         top: 20px;
         right: 15px; 
         font-size: 25px;
+    }
+
+    .restaurant-cards__heart {
+        @include heart-button; 
+        
     }

@@ -3,6 +3,7 @@
 @use "../utils/mixins";
 @use "../components/new-badges";
 @use "../components/heart-button";
+@use "../utils/media-querries";
 
 .restaurant {
     font-family: typography.$text-font-family;
@@ -45,15 +46,15 @@
             height: 25%;
             padding: 15px;
         }
-        &__heart {
-           @include heart-button.heart-button; 
-        }
         &__name {
             font-weight: 700;
             font-size: typography.$text-font-size;
         }
 
     }
-    
+
+    @include media-querries.mobile-only {
+        
+    }
 
 }

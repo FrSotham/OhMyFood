@@ -116,6 +116,13 @@
   font-weight: 800;
 }
 
+.restaurant-cards__heart {
+  position: absolute;
+  top: 20px;
+  right: 15px;
+  font-size: 25px;
+}
+
 .restaurant {
   font-family: "Roboto", sans-serif;
   display: flex;
@@ -166,13 +173,39 @@
   height: 25%;
   padding: 15px;
 }
-.restaurant-cards__heart {
-  position: absolute;
-  top: 20px;
-  right: 15px;
-  font-size: 25px;
-}
 .restaurant-cards__name {
   font-weight: 700;
   font-size: 18px;
+}
+.footer {
+  background-color: #3f3e3e;
+  color: rgba(255, 255, 255, 0.822);
+  padding: 25px;
+  padding-bottom: 30px;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  cursor: pointer;
+}
+.footer-logo {
+  font-family: "Shrikhand", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  padding-bottom: 15px;
+  color: white;
+}
+.footer a {
+  text-decoration: none;
+  color: inherit;
+}
+.footer-proposing {
+  display: flex;
+  gap: 15px;
+}
+.footer-partner {
+  display: flex;
+  gap: 10px;
 }
