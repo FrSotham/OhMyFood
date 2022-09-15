@@ -90,9 +90,10 @@
   flex-direction: column;
   gap: 30px;
   font-family: "Roboto", sans-serif;
-  margin: auto;
   padding: 40px 0px;
+  width: 100%;
   max-width: 1300px;
+  margin: auto;
 }
 .functioning-step {
   display: flex;
@@ -134,26 +135,30 @@
 .functioning-header__title {
   font-weight: 800;
 }
+@media (min-width: 1200px) {
+  .functioning-header {
+    margin-left: 0%;
+  }
+}
 .functioning-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 90%;
+  width: 100%;
   gap: 30px;
 }
 @media (min-width: 1200px) {
   .functioning-container {
-    display: grid;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    max-width: 1300px;
-    margin: auto;
+    width: 100%;
   }
 }
 @media (min-width: 1200px) {
   .functioning {
-    max-width: 1300px;
-    margin: auto;
+    width: 80%;
   }
 }
 
