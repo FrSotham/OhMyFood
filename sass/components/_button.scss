@@ -3,7 +3,10 @@
 @mixin button {
     text-decoration: none;
     color: white;
+    font-weight: 500;
     background:linear-gradient(variables.$color-secondary, variables.$color-primary);
     padding: 20px;
     border-radius: 50px;
+    width: 250px;
+    text-align: center;
 }

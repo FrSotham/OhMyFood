@@ -36,12 +36,14 @@
   height: 60px;
 }
 .localisation i {
-  padding: 10px;
-  font-size: 18px;
+  padding: 20px;
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.699);
 }
 .localisation p {
   font-family: "Roboto", sans-serif;
   font-weight: 600;
+  color: rgba(0, 0, 0, 0.699);
   font-size: 18px;
 }
 @media (min-width: 1200px) {
@@ -63,18 +65,22 @@
 }
 .explore-title {
   text-align: center;
-  font-size: 25px;
+  font-size: 30px;
 }
 .explore-subtitle {
   text-align: center;
   font-weight: 200;
+  font-size: 18px;
 }
 .explore-button {
   text-decoration: none;
   color: white;
+  font-weight: 500;
   background: linear-gradient(#FF79DA, #9356DC);
   padding: 20px;
   border-radius: 50px;
+  width: 250px;
+  text-align: center;
 }
 @media (min-width: 1200px) {
   .explore {
@@ -106,9 +112,15 @@
   border-radius: 25px;
   width: 90%;
 }
+.functioning-step:hover {
+  background-color: rgba(146, 86, 220, 0.0823529412);
+}
+.functioning-step:hover .functioning-step__img {
+  color: #9356DC;
+}
 .functioning-step__text {
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 600;
 }
 .functioning-step__number {
   background-color: #9356DC;
@@ -124,9 +136,7 @@
 }
 .functioning-step__img {
   color: rgba(0, 0, 0, 0.459);
-}
-.functioning-step:last-child {
-  background-color: rgba(146, 86, 220, 0.0823529412);
+  font-size: 18px;
 }
 .functioning-header {
   width: 100%;
@@ -169,6 +179,7 @@
   gap: 25px;
   background-color: rgba(226, 224, 224, 0.5960784314);
   padding: 15px;
+  padding-bottom: 60px;
 }
 .restaurant-header {
   padding: 30px 0px;
@@ -180,9 +191,6 @@
   background-color: white;
   width: 100%;
   height: 250px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   position: relative;
   border-radius: 5px;
 }
@@ -230,6 +238,12 @@
     height: 300px;
   }
 }
+.restaurant-grid {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+}
 @media (min-width: 1200px) {
   .restaurant-grid {
     display: grid;
@@ -262,8 +276,8 @@
 }
 .footer-logo {
   font-family: "Shrikhand", sans-serif;
-  font-weight: 400;
-  font-size: 20px;
+  font-weight: 500;
+  font-size: 18px;
   padding-bottom: 15px;
   color: white;
 }
@@ -326,6 +340,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 0px;
+  padding-top: 10px;
 }
 .menu-header__title {
   font-family: "Shrikhand", sans-serif;
@@ -348,6 +363,7 @@
   width: 200px;
   margin: auto;
   margin-top: 50px;
+  margin-bottom: 60px;
 }
 .menu-button a {
   text-decoration: none;
@@ -360,7 +376,7 @@
 }
 .cards__heading {
   padding: 30px 0px 10px 20px;
-  color: rgba(0, 0, 0, 0.644);
+  color: rgba(0, 0, 0, 0.541);
 }
 .cards__heading::after {
   content: "";

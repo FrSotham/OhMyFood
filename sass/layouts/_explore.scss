@@ -14,11 +14,12 @@
     
     &-title {
         text-align: center;
-        font-size: 25px;
+        font-size: 30px;
     }
     &-subtitle {
         text-align: center;
         font-weight: 200;
+        font-size: 18px;
     }
     &-button {
         @include button.button
