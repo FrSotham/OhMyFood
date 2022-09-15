@@ -3,15 +3,9 @@
 @use "../utils/typography";
 @use "../utils/media-querries";
 @use "../utils/animations";
+@use "../components/button";
 
-@keyframes spinprice {
-    0% {
-        transform: rotate(-360deg);
-    }
-    100% {
-        transform: rotate(0);
-    }
-    }
+
 
 .menu {
     background-color: #f1f1f1;
@@ -19,14 +13,14 @@
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
     position: relative;
-    top: -46px;
+    margin-top: -46px;
     font-family: typography.$text-font-family;
     width: 100%;
-
+    
     &-header {
         @include mixins.center-flex;
-        justify-content: space-around;
-        padding-bottom: 10px;
+        justify-content: space-between;
+        padding: 0px 30px;
 
         &__title {
             font-family: typography.$heading-font-family;
@@ -34,9 +28,21 @@
             font-weight: 500;
         }
 
-        &__button {
+        &__heart {
             border: none;
             font-size: 22px;
+        }   
+    }
+    &-button {
+        @include button.button;
+        @include mixins.center-flex;
+        width: 200px;
+        margin: auto;
+        margin-top: 50px;
+        & a {
+            text-decoration: none;
+            color:white;
+            font-weight: 700;
         }
     }
     
@@ -46,7 +52,7 @@
 .cards {
     width: 100%;
     &__heading {
-        padding: 20px 0px 20px 20px;
+        padding: 30px 0px 10px 20px;
         color: rgba(0, 0, 0, 0.644);
         &::after {
             content: "";
@@ -73,9 +79,9 @@
             justify-content: center;
             gap: 5px;
             padding: 10px;
-            text-overflow: ellipsis;
             overflow: hidden;
             white-space: nowrap;
+            text-overflow: ellipsis;
             width:100%;
             > :first-child {
                 font-weight: 800;
@@ -110,7 +116,7 @@
         }
 
         &:hover .cards-menu__check i {
-            animation: spinprice 1s ease;
+            animation: spin-price 0.8s;
         }
 
         }

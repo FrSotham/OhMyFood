@@ -5,8 +5,7 @@
     margin: 0px;
 }
 
-body {
-    @include media-querries.mobile-only {
-        margin: 0px 10%;
-    }
+main {
+    max-width: 1300px;
+    margin:auto;
 }

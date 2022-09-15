@@ -1,0 +1,9 @@
+@use "../utils/_variables.scss";
+
+@mixin button {
+    text-decoration: none;
+    color: white;
+    background:linear-gradient(variables.$color-secondary, variables.$color-primary);
+    padding: 20px;
+    border-radius: 50px;
+}
