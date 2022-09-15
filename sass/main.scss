@@ -1,19 +1,14 @@
-@use "./utils/variables";
 @use "./layouts/header";
-@use "./utils/typography";
-@use "./components/button";
 @use "./layouts/container";
 @use "./base/reset.scss";
 @use "./layouts/localisation";
 @use "./layouts/explore";
-@use "./utils/mixins";
 @use "./layouts/functionning";
 @use "./layouts/restaurant";
-@use "./components/new-badges";
-@use "./components/heart-button";
-@use "./utils/media-querries";
 @use "./layouts/footer";
 
 // @use pages
 
-@use "./menu";
+@use "./pages/utils/animations";
+@use "./pages/layouts/photo.scss";
+@use "./pages/layouts/cards-menu";

@@ -13,14 +13,16 @@
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
     position: relative;
-    margin-top: -46px;
     font-family: typography.$text-font-family;
     width: 100%;
+    max-width: 1300px;
+    margin: auto;
+    margin-top: -46px;
     
     &-header {
         @include mixins.center-flex;
         justify-content: space-between;
-        padding: 0px 30px;
+        padding: 0px;
 
         &__title {
             font-family: typography.$heading-font-family;

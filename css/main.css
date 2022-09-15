@@ -27,11 +27,6 @@
   margin: 0px;
 }
 
-main {
-  max-width: 1300px;
-  margin: auto;
-}
-
 .localisation {
   display: flex;
   justify-content: center;
@@ -95,7 +90,9 @@ main {
   flex-direction: column;
   gap: 30px;
   font-family: "Roboto", sans-serif;
-  margin: 40px 0px;
+  margin: auto;
+  padding: 40px 0px;
+  max-width: 1300px;
 }
 .functioning-step {
   display: flex;
@@ -137,6 +134,28 @@ main {
 .functioning-header__title {
   font-weight: 800;
 }
+.functioning-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  gap: 30px;
+}
+@media (min-width: 1200px) {
+  .functioning-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1300px;
+    margin: auto;
+  }
+}
+@media (min-width: 1200px) {
+  .functioning {
+    max-width: 1300px;
+    margin: auto;
+  }
+}
 
 .restaurant {
   font-family: "Roboto", sans-serif;
@@ -147,7 +166,7 @@ main {
   padding: 15px;
 }
 .restaurant-header {
-  padding-top: 30px;
+  padding: 30px 0px;
 }
 .restaurant-header__title {
   font-weight: 800;
@@ -155,7 +174,7 @@ main {
 .restaurant-cards {
   background-color: white;
   width: 100%;
-  height: 275px;
+  height: 250px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -203,13 +222,23 @@ main {
 }
 @media (min-width: 1200px) {
   .restaurant-cards {
-    height: 400px;
+    height: 300px;
   }
 }
 @media (min-width: 1200px) {
-  .restaurant {
-    border-radius: 20px;
-    margin-bottom: 30px;
+  .restaurant-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 1300px;
+    margin: auto;
+  }
+}
+@media (min-width: 1200px) {
+  .restaurant-container {
+    max-width: 1300px;
+    width: 80%;
+    margin: auto;
   }
 }
 
@@ -225,8 +254,6 @@ main {
   flex-direction: column;
   gap: 7px;
   cursor: pointer;
-  max-width: 1300px;
-  margin: auto;
 }
 .footer-logo {
   font-family: "Shrikhand", sans-serif;
@@ -282,16 +309,18 @@ main {
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
   position: relative;
-  margin-top: -46px;
   font-family: "Roboto", sans-serif;
   width: 100%;
+  max-width: 1300px;
+  margin: auto;
+  margin-top: -46px;
 }
 .menu-header {
   display: flex;
   justify-content: center;
   align-items: center;
   justify-content: space-between;
-  padding: 0px 30px;
+  padding: 0px;
 }
 .menu-header__title {
   font-family: "Shrikhand", sans-serif;
@@ -393,7 +422,7 @@ main {
   gap: 20px;
   width: 100%;
 }
-@media (min-width: 1000px) {
+@media (min-width: 1300px) {
   .cards-container {
     display: grid;
     grid-template-columns: repeat(3, 32%);
