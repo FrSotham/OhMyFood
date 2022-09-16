@@ -15,6 +15,7 @@
     text-align: center;
     height: 100px;
     box-shadow: 0px 5px 5px -5px variables.$color-shadow;
+    color: black;
     
     @include media-querries.mobile-only {
         box-shadow: none;
@@ -27,7 +28,11 @@
         display: flex;
         justify-content: center;
 
-        & a {
+        & :last-child {
+            text-decoration: none;
+        }
+
+        & .fa-solid {
             color: rgba(0, 0, 0, 0.685);
         }
     }
