@@ -1,0 +1,52 @@
+@use  "../utils/variables";
+@use "../utils/mixins";
+@use "../utils/typography";
+@use "../utils/media-querries";
+@use "../utils/animations";
+@use "../components/button";
+
+.menu {
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    position: relative;
+    font-family: typography.$text-font-family;
+    width: 100%;
+    max-width: 1300px;
+    margin: auto;
+    margin-top: -46px;
+    
+    &-header {
+        @include mixins.center-flex;
+        justify-content: space-between;
+        padding: 0px;
+        padding-top: 10px;
+
+        &__title {
+            font-family: typography.$heading-font-family;
+            font-size: typography.$heading-font-size;
+            font-weight: 500;
+        }
+
+        &__heart {
+            border: none;
+            font-size: 22px;
+        }   
+    }
+    &-button {
+        @include button.button;
+        @include mixins.center-flex;
+        width: 200px;
+        margin: auto;
+        margin-top: 50px;
+        margin-bottom: 60px;
+        & a {
+            text-decoration: none;
+            color:white;
+            font-weight: 700;
+        }
+    }
+    
+    
+}
