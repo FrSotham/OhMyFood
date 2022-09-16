@@ -27,7 +27,7 @@
 .header__withArrow :last-child {
   text-decoration: none;
 }
-.header__withArrow .fa-solid {
+.header__withArrow .fa-arrow-left {
   color: rgba(0, 0, 0, 0.685);
 }
 .header ::before {
@@ -192,6 +192,19 @@
   }
 }
 
+.fa-heart {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 25px;
+}
+.fa-heart:hover {
+  background: linear-gradient(#FF79DA, #9356DC);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
 .restaurant {
   font-family: "Roboto", sans-serif;
   display: flex;
@@ -244,15 +257,6 @@
   font-weight: 700;
   font-size: 18px;
 }
-.restaurant-cards__heart {
-  position: absolute;
-  top: 20px;
-  right: 15px;
-  font-size: 25px;
-}
-.restaurant-cards__heart:hover {
-  background-color: red;
-}
 @media (min-width: 1200px) {
   .restaurant-cards {
     height: 300px;
@@ -279,6 +283,13 @@
     width: 80%;
     margin: auto;
   }
+}
+
+.heart {
+  opacity: 0;
+}
+.heart:hover {
+  opacity: 1;
 }
 
 .footer {

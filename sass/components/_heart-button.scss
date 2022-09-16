@@ -1,10 +1,20 @@
-
+@use "../utils/variables";
 
 @mixin heart-button {
         position: absolute;
         top: 20px;
-        right: 15px; 
+        right: 30px; 
         font-size: 25px;
     }
 
-    
+
+    .fa-heart {
+        @include heart-button; 
+        &:hover {
+            background: linear-gradient(variables.$color-secondary, variables.$color-primary);
+            color: transparent;
+            background-clip: text;
+            -webkit-background-clip: text;
+        }
+        
+    }

@@ -56,13 +56,6 @@
             font-size: typography.$text-font-size;
         }
 
-        &__heart {
-            @include heart-button.heart-button; 
-            &:hover {
-                background-color: red;
-            }
-        }
-
         @include media-querries.mobile-only {
             height: 300px;
         }  
@@ -91,4 +84,11 @@
             }
         }
 
+}
+
+.heart {
+    opacity: 0;
+    &:hover {
+        opacity: 1;
+    }
 }
