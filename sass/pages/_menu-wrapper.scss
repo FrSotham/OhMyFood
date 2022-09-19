@@ -1,9 +1,9 @@
-@use  "../utils/variables";
+@use "../utils/variables";
 @use "../utils/mixins";
 @use "../utils/typography";
 @use "../utils/media-querries";
 @use "../utils/animations";
-@use "../components/button";
+@use "../components/order_button";
 
 .menu {
     background-color: #f1f1f1;
@@ -35,7 +35,7 @@
         }   
     }
     &-button {
-        @include button.button;
+        @include order_button.button;
         @include mixins.center-flex;
         width: 200px;
         margin: auto;

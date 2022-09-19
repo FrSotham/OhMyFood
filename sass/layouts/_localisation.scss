@@ -19,8 +19,4 @@
         color: rgba(0, 0, 0, 0.699);
         font-size: typography.$text-font-size
     }
-    @include media-querries.mobile-only {
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
-    }
 }
