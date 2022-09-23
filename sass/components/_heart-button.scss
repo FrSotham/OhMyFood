@@ -10,6 +10,7 @@
 
     .fa-heart {
         @include heart-button; 
+        transition: 0.5s;
         &:hover {
             background: linear-gradient(variables.$color-secondary, variables.$color-primary);
             color: transparent;

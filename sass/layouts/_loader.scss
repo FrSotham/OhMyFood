@@ -1,0 +1,102 @@
+@use "../utils/mixins";
+@use "../utils/variables";
+@use"../utils/typography";
+
+@keyframes rotate1 {
+    0% {
+        transform: rotateX(45deg) rotateY(-45deg) rotateZ(0deg);
+    }
+    100% {
+        transform: rotateX(45deg) rotateY(-45deg) rotateZ(360deg);
+    }
+    
+}
+
+@keyframes rotate2 {
+    0% {
+        transform: rotateX(67.5deg) rotateY(0deg) rotateZ(0deg);   
+       }
+    100% {
+        transform: rotateX(67.5deg) rotateY(0deg) rotateZ(360deg);
+    }
+}
+
+@keyframes rotate3 {
+    0% {
+        transform: rotateX(135deg) rotateY(45deg) rotateZ(0deg);   
+       }
+    100% {
+        transform: rotateX(135deg) rotateY(45deg) rotateZ(360deg);
+    }
+}
+
+@keyframes disappear {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        visibility: hidden;
+    }
+}
+
+
+.loader {
+    background-color:  #ffffffa2;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    z-index: 2;
+    @include mixins.center-flex;
+    animation: disappear 2s forwards;
+
+    &-container {
+        position: relative;
+        @include mixins.center-flex;
+        opacity: 0.8;
+        
+    }
+
+    &__ring {
+        width: 200px;
+        height: 200px;
+        border: 2px solid #ffffff;
+        border-radius: 50%;
+        position: absolute;
+
+        &:nth-child(1) {
+            border-right: none;
+            border-top: none;
+            border-left: none;
+            border-bottom-color: variables.$color-primary;
+            border-bottom-width: 8px;
+            animation: rotate1 2s linear infinite forwards;
+        }
+
+        &:nth-child(2) {
+            border-top: none;
+            border-bottom: none;
+            border-left-color: variables.$color-secondary;
+            border-right-color: variables.$color-secondary;
+            border-right-width: 8px;
+            border-left-width: 4px;
+            animation: rotate2 2s linear infinite forwards;
+        }
+
+        &:nth-child(3) {
+            border-right: none;
+            border-left: none;
+            border-bottom: none;
+            border-top-color: variables.$color-tertiary;
+            border-top-width: 8px;
+            animation: rotate3 2s linear infinite forwards;
+        }
+        }
+
+        &__text {
+            font-family: typography.$text-font-family;
+            font-weight: 700;
+            font-size: 22px;
+            z-index: 1;
+        }
+}

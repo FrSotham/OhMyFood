@@ -9,4 +9,8 @@
     border-radius: 50px;
     width: 250px;
     text-align: center;
+    transition: transform 200ms ease-in-out ;
+     &:hover {
+        transform: scale(1.02);
+     }
 }

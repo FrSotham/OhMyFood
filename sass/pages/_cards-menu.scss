@@ -24,7 +24,7 @@
     }
 
     &-menu {
-        @for $i from 1 through 9 {
+        @for $i from 1 through 5 {
             &:nth-child(#{$i}) {
                 animation-delay:100ms * $i;
             }       
@@ -39,8 +39,7 @@
         display: flex;
         box-shadow: 0px 2px 10px -1px variables.$color-shadow;
         overflow: hidden;
-        animation: 2s appear;
-        animation-fill-mode: both;
+        animation: appear 2s both;
 
         &__description {
             display: flex;
