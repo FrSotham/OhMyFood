@@ -376,7 +376,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: disappear 2s forwards;
+  animation: disappear 3s forwards;
 }
 .loader-container {
   position: relative;

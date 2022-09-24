@@ -48,7 +48,7 @@
     position: fixed;
     z-index: 2;
     @include mixins.center-flex;
-    animation: disappear 2s forwards;
+    animation: disappear 3s forwards;
 
     &-container {
         position: relative;
