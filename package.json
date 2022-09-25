@@ -2,7 +2,7 @@
   "name": "ohmyfood",
   "version": "1.0.0",
   "description": "projet 3 OC",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
     "sass": "sass --no-source-map --watch sass/main.scss css/main.css",
     "prefix": "postcss ./css/main.css --use autoprefixer -d ./css/prefixed/"
