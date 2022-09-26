@@ -5,7 +5,9 @@
   "main": "index.html",
   "scripts": {
     "sass": "sass --no-source-map --watch sass/main.scss css/main.css",
-    "prefix": "postcss ./css/main.css --use autoprefixer -d ./css/prefixed/"
+    "prefix": "postcss ./css/main.css --use autoprefixer -d ./css/prefixed/",
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html"
   },
   "keywords": [],
   "author": "frsotham",
