@@ -10,12 +10,18 @@
 
     .fa-heart {
         @include heart-button; 
-        transition: 0.5s;
+        transition: 0.7s;
         &:hover {
             background: linear-gradient(variables.$color-secondary, variables.$color-primary);
             color: transparent;
             background-clip: text;
             -webkit-background-clip: text;
+            opacity: 1;
         }
         
+    }
+
+    .heart {
+        color: transparent;
+        opacity: 0;
     }

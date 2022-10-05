@@ -42,18 +42,18 @@
 
 
 .loader {
-    background-color:  #ffffffa2;
+    background-color:  #ffffff;
     height: 100vh;
     width: 100vw;
     position: fixed;
     z-index: 2;
     @include mixins.center-flex;
-    animation: disappear 3s forwards;
+    animation: disappear 2s forwards;
 
     &-container {
         position: relative;
         @include mixins.center-flex;
-        opacity: 0.8;
+        opacity: 1;
         
     }
 
