@@ -21,8 +21,14 @@
         font-weight: 200;
         font-size: 18px;
     }
-    &-button {
-        @include button.button
+    & button {
+        border:none;
+        background-color: transparent;
+        width: 250px;
+        padding: 0;
+       
+        @include button.button;
+        
     }
     @include media-querries.mobile-only {
         border-bottom-left-radius: 20px;
