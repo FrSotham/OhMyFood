@@ -10,6 +10,8 @@
     flex-direction: column;
     gap: 20px;
     animation: appear 1s both;
+    max-width: 450px;
+    margin:auto;
     
 
     &__heading {
@@ -122,6 +124,8 @@
                 display: grid;
                 grid-template-columns: repeat(3, 1fr);
                  }
+
+            
         }
 
 
